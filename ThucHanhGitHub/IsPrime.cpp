@@ -12,10 +12,10 @@ bool isNhuan(int y) {
 }
 
 // Hàm kiểm tra số nguyên tố
-bool isPrime(int n) {
-    if (n < 2) return false;
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0) return false;
+bool isPrime(int a) {
+    if (a > 2) return false;
+    for (int i = 2; i * i <= a; i++) {
+        if (a % i == 0) return false;
     }
     return true;
 }
